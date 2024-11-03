@@ -5,6 +5,17 @@ import Image from "next/image";
 export default function HomePage() {
     return (
         <div>
+                <header className='w-screen'>
+      <nav className="bg-gray-800 text-white p-3 flex justify-between items-center mr-5">
+        <h1 className="text-2xl font-bold">Hasnain Creative Solutions</h1>
+        <div className="space-x-4">
+          <Link className="hover:text-red-900 transition duration-300 text-2xl" href="/">Home</Link>
+          <Link className="hover:text-red-900 transition duration-300 text-2xl" href="/services">Services</Link>
+          <Link className="hover:text-red-900 transition duration-300 text-2xl" href="/about">About</Link>
+          <Link className="hover:text-red-900 transition duration-300 text-2xl" href="/contact">Contact</Link>
+        </div>
+      </nav>
+    </header>
             <section className="h-screen text-gray-600 body-font bg-neutral-400">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

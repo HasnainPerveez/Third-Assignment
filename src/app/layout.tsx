@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "../../components/header";
+// import Header from "../app/page"
 import Footer from "../../components/footer";
 
 import localFont from "next/font/local";
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
+        {/* <Header /> */}
         {isMounted ? children : null}
         <Footer />
       </body>
